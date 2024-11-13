@@ -1,13 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.white-placeholder .ant-select-selection-placeholder {
+  color: white !important;
+}
+
+.white-placeholder .ant-select-selection-item {
+  color: white !important;
+}
+.white-placeholder .ant-select-arrow {
+  color: white !important;
+}
+.white-placeholder .ant-select-selection-item,
+.white-placeholder .ant-select-selection-placeholder {
+  font-size: 1rem !important; /* Equivalent to Tailwind's text-2xl */
+  color: white !important; /* Ensures text color is white as well */
+}
+.ant-select-selector {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove border on the focused state */
+.ant-select-focused .ant-select-selector {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Remove background on hover and focus */
+.ant-select-selector:hover,
+.ant-select-selector:focus {
+  background-color: transparent !important;
+}
+
+/* Optional: Style the dropdown */
+.transparent-dropdown .ant-select-dropdown {
+  background-color: transparent !important;
 }
