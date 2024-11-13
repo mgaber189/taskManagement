@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+### Summary of Changes:
+1. Added the `npm install` command in the setup instructions.
+2. Included instructions for navigating to the `src` directory and starting the server with `node server.js`.
+3. Kept the original Create React App setup instructions for running the project (`npm start`).
+
+With these changes, the setup and usage steps are now more customized for your project.
+
 ## Available Scripts
 
 In the project directory, you can run:
