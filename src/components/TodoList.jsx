@@ -26,13 +26,15 @@ const TodoList = () => {
     <>
       {todos?.length === 0 ? (
         <p className="text-center text-white text-lg mt-5">No todos found</p>
+      ) : filteredTodos?.length === 0 ? (
+        <p className="text-center text-white text-lg mt-5">No todos found</p>
       ) : (
         <ul className="w-full mt-10 mx-auto">
           {(filteredTodos?.length > 0 ? filteredTodos : todos)?.map(
             (todo, index) => (
               <li
                 key={index}
-                className="flex flex-col md:flex-row items-center md:items-start md:space-x-4 mb-4">
+                className="flex flex-col md:flex-row items-center md:space-x-4 mb-4">
                 <div className="flex items-center justify-center w-full md:w-1/12 mb-2 md:mb-0">
                   {todo?.completed ? (
                     <BsCheckCircleFill
