@@ -62,7 +62,7 @@ const TodoList = () => {
                 </div>
                 <div className="text-lg md:text-2xl text-white flex items-center justify-between w-full md:w-11/12 bg-[#F2B138] rounded-xl p-3 md:p-5">
                   <p className="w-10/12 text-left mx-3 md:mx-5 truncate">
-                    {todo?.todo}
+                    {`${todo?.todo} (${todo?.priority?.charAt(0)?.toUpperCase() + todo?.priority?.slice(1)})`} 
                   </p>
                   <div className="flex space-x-2 md:space-x-4">
                     <button onClick={() => dispatch(setEditTodo(todo))}>

@@ -15,7 +15,6 @@ function App() {
   const dispatch = useDispatch();
   const [isConnected, setIsConnected] = useState(socket.connected);
   const isSocketInitialized = useRef(false); 
-  console.log(todos)
   useEffect(() => {
     const handleConnect = () => {
       if (!isSocketInitialized.current) {
@@ -58,7 +57,7 @@ function App() {
       socket.off("todoUpdated");
       isSocketInitialized.current = false;
     };
-  }, [todos, dispatch]);
+  }, [dispatch]);
   
 
   return (

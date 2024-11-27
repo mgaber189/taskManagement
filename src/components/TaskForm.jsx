@@ -53,11 +53,12 @@ const TaskForm = () => {
         className="sign-form flex flex-col md:flex-row items-center md:justify-between w-full max-w-xl md:max-w-2xl lg:max-w-3xl m-auto mt-5 mb-5 border border-1 rounded-xl overflow-hidden">
         <Form.Item
           name="todo"
-          className="w-full md:w-5/12 lg:w-4/12 m-0 mb-4 md:mb-0"
+          className="w-full  md:w-5/12 lg:w-4/12 m-0 mb-4 md:mb-0"
           rules={[{ required: true, message: "Please enter a task" }]}>
           <Input
+          autoComplete="off"
             placeholder="Write your task today"
-            className="text-white bg-transparent border-0 hover:bg-transparent focus:bg-transparent placeholder:text-white text-lg md:text-xl h-full"
+            className="text-white white-placeholder !bg-transparent border-0 hover:!bg-transparent focus:!bg-transparent placeholder:!text-white text-lg md:text-xl h-full"
           />
         </Form.Item>
 
